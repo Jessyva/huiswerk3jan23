@@ -4,18 +4,15 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
+let names = ["Henk", "Piet", "Fred", "Joop"];
+let namesWithJe = [];
 
-// Verwachtte uitkomsten:
-// Vóór het script zie je de originele waardes:
-// console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
-// Na jouw script zie je de aangepaste waardes:
-// console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
-
+for (let i = 0; i < names.length; i++) {
+    namesWithJe.push(names[i] + " je");
+}
 
 
-
-
+console.log(namesWithJe);
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
@@ -30,6 +27,17 @@ const numbers = [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
 
+let nummers = [2, 4, 5, 29, 38];
+
+for (let i = 0; i < nummers.length; i++) {
+    if (nummers[i] % 2 === 0) {
+        nummers[i] *= 2;
+    } else {
+        nummers[i] *= 3;
+    }
+}
+
+console.log(nummers);
 
 
 
